@@ -27,10 +27,10 @@ function getTimeInfo() {
   const pad  = n => String(n).padStart(2,"0");
   const ampm = h >= 12 ? "PM" : "AM";
   const timeStr = `${((h%12)||12)}:${pad(m)} ${ampm}`;
-  const autoNight   = h >= 19 || h < 6;
+  const autoNight   = h >= 18 || h < 6;
   const isMorning   = h >= 6  && h < 10;
-  const isDawn      = h >= 5  && h < 7;
-  const isDusk      = h >= 17 && h < 19;
+  const isDawn      = h >= 5  && h < 6;
+  const isDusk      = h >= 17 && h < 18;
   const isNight     = manualOverride === "night" ? true
                     : manualOverride === "day"   ? false
                     : autoNight;

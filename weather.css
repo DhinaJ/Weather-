@@ -362,7 +362,7 @@ input#city {
   background: rgba(255,255,255,.15); border:1.5px solid rgba(255,255,255,.3);
   border-radius:12px; font-family:'Sora',sans-serif;
   font-size: clamp(.8rem,2.3vw,.9rem); color:var(--day-text);
-  outline:none; -webkit-appearance:none;
+  outline:none; appearance:none; -webkit-appearance:none;
   transition: border-color .3s, background .3s, color 1.2s;
 }
 body.night input#city { background:rgba(20,50,120,.4); border-color:rgba(100,160,255,.25); color:var(--night-text); }
